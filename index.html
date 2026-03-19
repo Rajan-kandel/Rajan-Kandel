@@ -103,9 +103,21 @@
   </div>
 
   <!-- Footer -->
-  <footer class="text-center py-6 text-sm text-white/80 bg-black">
-    © 2025 Rajan Kandel.
-  </footer>
+  < <!-- Footer -->
+<footer class="text-center py-6 text-sm text-white/80 bg-black">
+  © <span id="year"></span> Rajan Kandel.
+</footer>
+
+
+
 
 </body>
 </html>
+
+// footer js
+<script>
+  // Get the current year
+  const currentYear = new Date().getFullYear();
+  // Insert it into the footer span
+  document.getElementById("year").textContent = currentYear;
+</script>
